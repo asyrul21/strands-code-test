@@ -36,8 +36,7 @@ closure();
 function sampleFunction() {
   var arr = [];
   for (var i = 0; i < 3; i++) {
-    // each push call returns new arr length
-    let ret = arr.push(function () {
+    arr.push(function () {
       console.log(i);
     });
 
